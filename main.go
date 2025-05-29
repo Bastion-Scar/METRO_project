@@ -39,6 +39,9 @@ func (KPIAlert) TableName() string {
 
 func main() {
 
+for i := 0; i<=8; i++ {
+	log.Println("Выполнил Иван Коптелов Bastion_Scar")
+}
 
     if err := godotenv.Load("secretData.env"); err != nil {
         log.Fatal("Ошибка загрузки .env файла")
@@ -182,4 +185,5 @@ htmlTable.WriteString(`
     if err := r.Run("10.205.201.13:8080"); err != nil {
         log.Fatal("Ошибка при запуске сервера")
     }
+
 }
